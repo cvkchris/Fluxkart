@@ -1,14 +1,16 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const setRoutes = require('./routes/index');
+const identify = require('./routes/route');
+require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-setRoutes(app);
+
+app.post('/identify', identify); 
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
