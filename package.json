@@ -9,6 +9,7 @@
   "author": "Chris Vinod Kurian",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express.js": "^1.0.0",
     "mysql2": "^3.14.1"
   }
