@@ -7,6 +7,7 @@ A Node.js + Express backend API for managing and identifying contacts, using MyS
 - Add new contacts or link to existing ones based on email/phone.
 - Retrieve all linked contacts for a given email or phone number.
 - Uses MySQL transactions for data consistency.
+- Environment-based configuration for easy deployment.
 
 ## Project Structure
 
@@ -111,11 +112,22 @@ Fluxkart/
 }
 ```
 
+## Troubleshooting
+
+- **ETIMEDOUT or Connection Errors:**  
+  Ensure your MySQL server is running, accessible, and the credentials in `.env` are correct.  
+  If using Docker or a remote DB, check network/firewall settings.
+
+- **Access Denied Errors:**  
+  Double-check your MySQL username and password in the `.env` file.
+
+- **Environment Variables Not Loading:**  
+  Make sure `require('dotenv').config();` is at the top of your `app.js` and `db.js`.
+
 ## Notes
 
 - Make sure your MySQL credentials in `.env` are correct.
 - The API uses transactions for insert and retrieval to ensure data consistency.
-- You can extend the API by adding more routes/controllers as needed.
 
 ## License
 
