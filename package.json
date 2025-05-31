@@ -1,0 +1,15 @@
+{
+  "name": "fluxkart",
+  "version": "1.0.0",
+  "description": "A Node.js API that communicates with a MySQL database.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "Chris Vinod Kurian",
+  "license": "ISC",
+  "dependencies": {
+    "express.js": "^1.0.0",
+    "mysql2": "^3.14.1"
+  }
+}
