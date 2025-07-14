@@ -129,6 +129,3 @@ Fluxkart/
 - Make sure your MySQL credentials in `.env` are correct.
 - The API uses transactions for insert and retrieval to ensure data consistency.
 
-## License
-
-MIT
