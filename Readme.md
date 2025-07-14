@@ -20,9 +20,7 @@ Fluxkart/
 │   ├── models/
 │   │   └── db.js
 │   ├── routes/
-│   │   └── route.js
-│   └── config/
-│       └── database.js (optional, if you want config file)
+│      └── route.js
 ├── .env
 ├── package.json
 └── Readme.md
